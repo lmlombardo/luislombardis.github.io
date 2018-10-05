@@ -1,0 +1,62 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("img/images.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.puntero:hover{
+	cursor: pointer;
+}
+
+#scrollButton{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+.colorTitulo{
+	background-color: #8E5AD5;
+	color: white;
+}
+
+.colorCardSup{
+	background-color: #8BDEB3;
+	color: white;
+}
+
+.colorEnlaces{
+	background-color: #C1F637;
+	color: black;
+}
+
+.colorTexto{
+	background-color: #8BDEB3;
+	color: #1b5e20;
+}
+
+.colorBoton{
+	background-color: #FF625F;
+	color: white;
+}
+/*<div id="contenedor">
+		<div class="reloj" id="Horas">00</div>
+		<div class="reloj" id="Minutos">:00</div>
+		<div class="reloj" id="Segundos">:00</div>
+		<div class="reloj" id="Centesimas">:00</div>
+		<input type="button" class="boton" id="inicio" value="Start &#9658;" onclick="inicio();">
+		<input type="button" class="boton" id="parar" value="Stop &#8718;" onclick="parar();" disabled>
+		<input type="button" class="boton" id="continuar" value="Resume &#8634;" onclick="inicio();" disabled>
+		<input type="button" class="boton" id="reinicio" value="Reset &#8635;" onclick="reinicio();" disabled>
+	</div>*/
