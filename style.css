@@ -50,6 +50,72 @@ body{
 	background-color: #FF625F;
 	color: white;
 }
+
+
+
+
+body{
+  background-color: #98cfb2;
+}
+.pendulum{
+  position:relative; 
+  width: 220px;
+  height: 180px;
+  background-color: #f8c6cf;
+  border-radius: 5%;
+  align-items: center;
+  border-top: 15px solid #eee7d5;
+  }
+.pendulum_box{
+  display: flex;
+  padding: 120px 0 0 10px;
+  position: absolute;
+  flex: 1;
+}
+.ball{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #455681;
+  position: relative;
+  transform-origin: 50% -300%;
+  
+}
+  .ball::before{
+    content: '';
+    width: 2px;
+    height: 120px;
+    background-color: #fffeff;
+    left: 18px;
+    top: -120px;
+    position: absolute;
+  }
+
+.ball.first{
+  animation: firstball .9s alternate ease-in infinite;
+}
+
+@keyframes firstball{
+  0%{
+    transform: rotate(35deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+}
+
+.ball.last{
+  animation: lastball .9s alternate ease-out infinite;
+}
+
+@keyframes lastball{
+  50%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-35deg);
+  }
+}
 /*<div id="contenedor">
 		<div class="reloj" id="Horas">00</div>
 		<div class="reloj" id="Minutos">:00</div>
